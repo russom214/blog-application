@@ -5,6 +5,7 @@ import Homepage from "./components/Homepage";
 import About from "./components/About";
 import ArticlesList from "./components/ArticlesList";
 import Article from "./components/Article";
+import NotFound from "./components/NotFound";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/articles" element={<ArticlesList />} />
           <Route path="/articles/:articleId" element={<Article />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
     </>
